@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asking you out on a date :)</title>
+<img src="C:\Users\Sanvi\OneDrive\Documents\HTML FILES\DATE\date.jpg">
+<style>
+body 
+{
+font-family: 'Bradley Hand ITC', sans-serif;
+text-align: center;
+      margin: 0;
+      padding: 0;
+      background: url('C:/Users/Sanvi/Downloads/date.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #eb7d34;
+    }
+
+    h1 
+{
+      color: #d42663;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #yes-btn {
+      background-color: #4CAF50;
+      color: #fff;
+border: none;
+}
+
+#no-btn {
+background-color: #bd3939;
+color: #fff;
+border: none;
+}
+
+#caution 
+{
+color: #f44336;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>SHREYA</h1>
+<h1>Would You Like to Go on a Date?</h1>
+   
+<button id="yes-btn" onclick="alert('Lemme Know the date before 31st ;)');">Yes</button>
+<button id="no-btn" onclick="showCaution();">No</button>
+<h2><p id="caution" style="display: none;">THINK TWICE BEFORE DECLINING (You can't love)</p></h2>
+</div>
+
+<script>
+function showCaution() 
+{
+document.getElementById('caution').style.display = 'block';
+}
+</script>
+</body>
+</html>
